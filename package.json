@@ -4,6 +4,8 @@
   "private": true,
   "description": "Проект «Большое путешествие (простой)» от HTML Academy",
   "scripts": {
+    "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production",
     "lint": "eslint src/"
   },
   "devDependencies": {
@@ -26,5 +28,12 @@
     "dayjs": "1.11.3",
     "flatpickr": "4.6.13",
     "he": "1.2.0"
-  }
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not IE <= 11",
+    "not op_mini all",
+    "not < 0.25%"
+  ]
 }
