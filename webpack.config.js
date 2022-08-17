@@ -19,7 +19,10 @@ module.exports = {
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: `${path.resolve(__dirname, 'public')}`, to: `${path.resolve(__dirname, 'build')}` },
+        {
+          from: path.resolve(__dirname, 'public'),
+          to: path.resolve(__dirname, 'build')
+        },
       ],
     }),
   ],
@@ -27,7 +30,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: /(node_modules)/,
+        exclude: /node_modules/,
         use: ['babel-loader']
       }
     ]
