@@ -13,4 +13,3 @@ const Presenter = new TripPresenter();
 
 Presenter.init(tripFiltersContainerElement, new TripFilter());
 Presenter.init(tripEventsContainerElement, new SortPoint());
-Presenter.init();
